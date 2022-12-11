@@ -1,21 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./NavBar";
-import Home from "./Home";
-import Submit from "./Submit";
-import Reviews from "./Reviews";
+import Home from "./RestaurantHome";
+import RestaurantForm from "./RestaurantForm";
+import RestaurantReviews from "./RestaurantReviews";
 import Error from "./Error";
 
 
+
 function App() {
+  
+
   return (
     <div>
       <Router>
-      <NavBar />
+        <NavBar />
         <Routes>
           <Route path="/" element={<Home />}/>
-          <Route path="/submit" element={<Submit />}/>
-          <Route path="/reviews" element={<Reviews />}/>
+          <Route path="/submit" element={<RestaurantForm />}/>
+          <Route path="/reviews" element={<RestaurantReviews />}/>
           <Route path="/*" element={<Error />}/>
         </Routes>
       </Router>
