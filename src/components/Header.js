@@ -8,7 +8,7 @@ function Header() {
         <h1>
             My Favorite Restaurants 
             <span className="logo">
-                <img src="/images/fav restaurants logo.png" width= "50" height= "50"/>
+                <img src="/images/fav restaurants logo.png" width= "65" height= "65"/>
             </span>
         </h1>
     </header>
