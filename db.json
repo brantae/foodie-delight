@@ -3,26 +3,32 @@
         {
             "id": 1, 
             "name": "Ariccia Cucina Italiana",
+            "location": "Auburn, AL",
             "fast-food": "false",
             "cuisine-type": "Italian",
             "image": "https://media-cdn.tripadvisor.com/media/photo-s/1b/7b/73/47/ariccia-patio.jpg",
-            "rating": 8
+            "rating": 8,
+            "review": "Very authentic and modern Italian spot with a specialty in porchetta"
         },
         {
             "id": 2, 
             "name": "Nakamura",
+            "location": "NYC, NY",
             "fast-food": "false",
             "cuisine-type": "Japanese",
             "image": "https://media-cdn.tripadvisor.com/media/photo-s/17/91/62/a5/photo0jpg.jpg",
-            "rating": 10
+            "rating": 10,
+            "review": "One of the best places to get ramen in NYC!"
         },
         {
             "id": 3,
             "name": "Chipotle Mexican Grill",
+            "location": "Nationwide",
             "fast-food": "true",
             "cuisine-type": "Tex-Mex",
             "image": "https://media.cnn.com/api/v1/images/stellar/prod/220214181105-embargoed-01-chipotle-3000th-store.jpg?q=h_1593,w_2000,x_0,y_0",
-            "rating": 7
+            "rating": 7,
+            "review": "Chipotle sometimes misses but is usually a hit"
         }
     ]
 }
