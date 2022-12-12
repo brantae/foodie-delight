@@ -45,6 +45,7 @@ nav {
   display: flex;
   align-items: center;
   padding: .25rem;
+  font-size: large;
 }
 
 .nav li.active {

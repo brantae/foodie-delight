@@ -9,7 +9,7 @@ const [formData, setFormData] = useState({
   fastFood: false,
   cuisineType: '',
   image: '',
-  rating: 0
+  rating: ''
 
 })
 
@@ -35,41 +35,41 @@ const [formData, setFormData] = useState({
           <Form.Group>
             <Form.Input 
                
-              label="Name" 
+              label="name" 
               placeholder="restaurant name..." 
               value={formData.name}
               onChange={handleChange} 
             />
             <Form.Input 
                
-              label="Location" 
+              label="location" 
               placeholder="restaurant location..."
               value={formData.location}
               onChange={handleChange} 
             />
             <Form.Input 
                
-              label="Cuisine Type" 
+              label="cuisine type" 
               placeholder="cuisine type..."
               value={formData.cuisineType}
               onChange={handleChange} 
             />
             <Form.Input 
-               
-              label="Image" 
+              label="image" 
               placeholder="paste image url..."
               value={formData.image}
               onChange={handleChange} 
             />
             <Form.Input 
-              fluid 
-              label="Rating" 
-              placeholder="rating out of 10..."
+              label="rating" 
+              placeholder="# out of 10..."
               value={formData.rating}
               onChange={handleChange} 
+              width={2}
             />
-            <Form.Button>Submit</Form.Button>
+            
           </Form.Group>
+          <Form.Button>submit</Form.Button>
         </Form>
     </div>
   );

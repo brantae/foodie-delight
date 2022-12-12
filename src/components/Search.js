@@ -1,7 +1,8 @@
 import React from "react";
+import { Input } from "semantic-ui-react";
 
 function Search({ search, onChangeSearch }) {
-  //function to handle the onchange in input
+//function to handle the onchange in input
 //set the state and pass it back up to parent component
   function handleChange(event) {
     onChangeSearch(event.target.value)
@@ -9,11 +10,14 @@ function Search({ search, onChangeSearch }) {
 
   return (
     <div className="ui search">
-      <div className="ui icon input">
-        <input className="prompt" value={search} onChange={handleChange}/>
-        <i className="search icon" />
+              <Input
+            icon={{ name: 'search', circular: true, link: true }}
+            placeholder='search by name'
+            value={search}
+            onChange={handleChange}
+  />
       </div>
-    </div>
+    
   );
 }
 
