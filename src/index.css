@@ -57,3 +57,15 @@ nav {
 .nav li:hover {
   background-color: #777;
 }
+
+.cuisineType {
+  padding-left: 1rem;
+}
+
+.review-header {
+  padding-left: 1rem;
+}
+
+.contact-form {
+  padding-left: 3rem;
+}

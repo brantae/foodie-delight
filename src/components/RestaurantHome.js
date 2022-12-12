@@ -1,23 +1,15 @@
 import React from "react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Container } from "semantic-ui-react"
 import Header from "./Header";
 import RestaurantCollection from "./RestaurantCollection";
 import RestaurantForm from "./RestaurantForm";
 import Search from "./Search";
 
-function Home() {
+function RestaurantHome({ restaurants, setRestaurants }) {
 
-const [restaurants, setRestaurants] = useState([])
 const [search, setSearch] = useState("")
 
-  //fetch restaurant data from server
-    useEffect(() => {
-      fetch("http://localhost:3003/restaurants")
-      .then(r => r.json())
-      .then(data => setRestaurants(data))
-
-  }, [])
 
   //filter restaurant for our search feature
   const restaurantsToDisplay = restaurants.filter(restaurant => {
@@ -26,13 +18,8 @@ const [search, setSearch] = useState("")
 
   //add new restaurant to the data
     function handleAddRestaurant(newRestaurant) {
-      setRestaurants([...restaurants, newRestaurant])
+      setRestaurants([newRestaurant, ...restaurants])
     }
-
-  //need function to add restaurant to state (form)
-  function handleAddRestaurant(newRestaurant) {
-    setRestaurants([newRestaurant, ...restaurants])
-  }
 
 
   return (
@@ -50,4 +37,4 @@ const [search, setSearch] = useState("")
   );
 }
 
-export default Home;
+export default RestaurantHome;

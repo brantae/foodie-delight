@@ -7,25 +7,30 @@ function RestaurantCard({ restaurants }) {
 
   return (
     <Card>
-        <Image 
+        <Image
+            className="restaurant-image" 
+            centered
             src={image} 
-            alt="oh no!" 
-            position="center" 
-            width='500' 
+            alt="oh no!"  
+            width='500'
             height='500'/>
         <Card.Content>
             <Card.Header>
                 {name}
             </Card.Header>
-            <Card.Meta>
-                <span className='location'>{location}</span>
+            <Card.Meta 
+                className='location'
+                textAlign="left">
+                {location}
             </Card.Meta>
         </Card.Content>
-        <Card.Description>
+        <Card.Description
+            className="cuisineType"
+            textAlign="left">
             {cuisineType}
         </Card.Description>
         <Card.Content extra>
-        rating: {rating}/10
+        <b>rating: {rating}/10</b>
         </Card.Content>
     </Card>
   );
