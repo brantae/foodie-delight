@@ -36,33 +36,33 @@ const [formData, setFormData] = useState({
             <Form.Input 
                
               label="name" 
-              placeholder="restaurant name..." 
+              placeholder="restaurant name" 
               value={formData.name}
               onChange={handleChange} 
             />
             <Form.Input 
                
               label="location" 
-              placeholder="restaurant location..."
+              placeholder="restaurant location"
               value={formData.location}
               onChange={handleChange} 
             />
             <Form.Input 
                
               label="cuisine type" 
-              placeholder="cuisine type..."
+              placeholder="cuisine type"
               value={formData.cuisineType}
               onChange={handleChange} 
             />
             <Form.Input 
               label="image" 
-              placeholder="paste image url..."
+              placeholder="paste image url"
               value={formData.image}
               onChange={handleChange} 
             />
             <Form.Input 
               label="rating" 
-              placeholder="# out of 10..."
+              placeholder="# out of 10 "
               value={formData.rating}
               onChange={handleChange} 
               width={2}

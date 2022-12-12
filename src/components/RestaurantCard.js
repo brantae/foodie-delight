@@ -1,29 +1,32 @@
 import React from "react";
-import { Card } from "semantic-ui-react";
+import { Card, Image } from "semantic-ui-react";
 
 function RestaurantCard({ restaurants }) {
 
-    const { name, location, ['fast-food']: fastFood, ['cuisine-type']: cuisineType, image, rating } = restaurants
+    const { name, location, ['cuisine-type']: cuisineType, image, rating } = restaurants
 
   return (
     <Card>
-      <div className="card">
-        <div className="image">
-            <img src={image} alt="oh no!" height='300' width='300' />
-        </div>
-        <div className="content">
-            <h2>{name}</h2>
-        </div>
-        <div className="location">
-            <h3>{location}</h3>
-        </div>
-        <div className="cuisine-type">
-            <p>{cuisineType}</p>
-        </div>
-        <div className="rating">
-            <p>rating: {rating}/10</p>
-        </div>
-      </div>
+        <Image 
+            src={image} 
+            alt="oh no!" 
+            position="center" 
+            width='500' 
+            height='500'/>
+        <Card.Content>
+            <Card.Header>
+                {name}
+            </Card.Header>
+            <Card.Meta>
+                <span className='location'>{location}</span>
+            </Card.Meta>
+        </Card.Content>
+        <Card.Description>
+            {cuisineType}
+        </Card.Description>
+        <Card.Content extra>
+        rating: {rating}/10
+        </Card.Content>
     </Card>
   );
 }

@@ -6,7 +6,7 @@ function Header() {
     
     <header>
         <h1>
-            my favorite restaurants 
+            world's best restaurants 
             <span className="logo">
                 <img src="/images/fav restaurants logo.png" alt="clip art  restaurant logo" width= "65" height= "65"/>
             </span>

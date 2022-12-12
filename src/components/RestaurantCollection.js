@@ -11,7 +11,7 @@ function RestaurantCollection({ restaurants }) {
 
     return (
         <div>
-            <Card.Group itemsPerRow={3}>
+            <Card.Group itemsPerRow={2}>
                 {cards}
             </Card.Group>
         </div>
