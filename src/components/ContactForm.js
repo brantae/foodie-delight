@@ -3,25 +3,23 @@ import { Form, Message } from "semantic-ui-react";
 
 function ContactForm() {
 
-    const [formSuccess, setFormSuccess] = useState(null)
-    const [formError, setFormError] = useState(null)
+    const [formSuccess, setFormSuccess] = useState(false)
 
     function handleSubmit() {
-
-        
+        setFormSuccess(true)
     }
 
     return (
         <div className="contact-form">
             < br/>
-            <Form success={formSuccess} error={formError}>
+            <Form success>
                 <Form.Group>
                     <Form.Input
                         required
                         label="first name"
                         placeholder="first name"
                     />
-                        <Form.Input
+                    <Form.Input
                         required
                         label="last name"
                         placeholder="last name"
@@ -40,16 +38,17 @@ function ContactForm() {
                         label="reason for contact"
                         placeholder="add any comments, questions, or concerns :)" 
                     />
-                    <Message
+                     { formSuccess ? <Message
                         success
                         header='submit completed'
                         content="your feedback has been received"
-                    />
-                    <Message
+                        /> 
+                        : <Message
                         error
-                        header='submit incomplete'
-                        content="all fields must be filled, please try again"
-                    />
+
+                        /> }
+  
+               
                     <Form.Button onClick={handleSubmit}>
                         Submit
                     </Form.Button>

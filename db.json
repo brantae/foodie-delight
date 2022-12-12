@@ -53,6 +53,15 @@
       "image": "https://scontent.fdpa1-1.fna.fbcdn.net/v/t39.30808-6/310320152_421639276784604_8393065255737428160_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=e3f864&_nc_ohc=g6lSxUZjyHoAX9U6SdF&_nc_ht=scontent.fdpa1-1.fna&oh=00_AfAHG4hVD9AUc85TX2zYlFM9gpdAupLeN85TKXSgoTAzfQ&oe=639C0493",
       "rating": 10,
       "review": "The fried chicken and gouda grits with mustard greens was probably the best thing I have ever tasted."
+    },
+    {
+      "name": "McDonald's",
+      "location": "Nationwide",
+      "cuisineType": "Burgers",
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/1b/7b/73/47/ariccia-patio.jpg",
+      "rating": "5",
+      "review": "",
+      "id": 7
     }
   ]
 }

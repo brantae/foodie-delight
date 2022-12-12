@@ -10,7 +10,9 @@ function RestaurantReviews({ restaurants }) {
 })
 
   return (
-    <div>
+    <div className="reviews">
+      <br></br>
+      <h1>Reviews</h1>
       <br></br>
     <Card.Group centered>
       {reviews}
