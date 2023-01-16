@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Ariccia Cucina Italiana",
       "location": "Auburn, AL",
-      "cuisine-type": "Italian",
+      "cuisineType": "Italian",
       "image": "https://media-cdn.tripadvisor.com/media/photo-s/1b/7b/73/47/ariccia-patio.jpg",
       "rating": 8,
       "review": "Very authentic and modern Italian spot with a specialty in porchetta"
@@ -13,7 +13,7 @@
       "id": 2,
       "name": "Nakamura",
       "location": "NYC, NY",
-      "cuisine-type": "Japanese",
+      "cuisineType": "Japanese",
       "image": "https://media-cdn.tripadvisor.com/media/photo-s/17/91/62/a5/photo0jpg.jpg",
       "rating": 10,
       "review": "One of the best places to get ramen in NYC!"
@@ -22,7 +22,7 @@
       "id": 3,
       "name": "Chipotle Mexican Grill",
       "location": "Nationwide",
-      "cuisine-type": "Tex-Mex",
+      "cuisineType": "Tex-Mex",
       "image": "https://media.cnn.com/api/v1/images/stellar/prod/220214181105-embargoed-01-chipotle-3000th-store.jpg?q=h_1593,w_2000,x_0,y_0",
       "rating": 7,
       "review": "Chipotle sometimes misses but is usually a hit"
@@ -31,7 +31,7 @@
       "id": 4,
       "name": "Junior Colombian Burger",
       "location": "Orlando, FL",
-      "cuisine-type": "Colombian",
+      "cuisineType": "Colombian",
       "image": "https://fastly.4sqi.net/img/general/600x600/493832513_rSgFRYR4mQKJdmAWXbyQQe3fmQIXCtQnRDySYASUdm8.jpg",
       "rating": 7,
       "review": "I could eat two dozen empanadas from here if I tried"
@@ -40,8 +40,8 @@
       "id": 5,
       "name": "Savanh Thai Kitchen",
       "location": "Auburn, AL",
-      "cuisine-type": "Thai",
-      "image": "https://scontent.fhsv1-1.fna.fbcdn.net/v/t39.30808-6/298470039_404447091676558_8947149171570729969_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_ohc=I8QmB9dpFrEAX-QnqIJ&tn=5hIf_ytC2lX6ODeJ&_nc_ht=scontent.fhsv1-1.fna&oh=00_AfBVvaYMsatlZOb5ZGK5MAIVI-t4tY02xWLj-GUi92HtBA&oe=639A9DBB",
+      "cuisineType": "Thai",
+      "image": "https://opelikaobserver.com/wp-content/uploads/2022/02/thai1.jpg",
       "rating": 9,
       "review": "It can be a bit expensive, but nothing beats the veggie spring rolls and the yellow curry"
     },
@@ -49,7 +49,7 @@
       "id": 6,
       "name": "The Southern Kitchen & Bar",
       "location": "Birmingham, AL",
-      "cuisine-type": "Southern Modern",
+      "cuisineType": "Southern Modern",
       "image": "https://scontent.fdpa1-1.fna.fbcdn.net/v/t39.30808-6/310320152_421639276784604_8393065255737428160_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=e3f864&_nc_ohc=g6lSxUZjyHoAX9U6SdF&_nc_ht=scontent.fdpa1-1.fna&oh=00_AfAHG4hVD9AUc85TX2zYlFM9gpdAupLeN85TKXSgoTAzfQ&oe=639C0493",
       "rating": 10,
       "review": "The fried chicken and gouda grits with mustard greens was probably the best thing I have ever tasted."
@@ -62,6 +62,24 @@
       "rating": "5",
       "review": "",
       "id": 7
+    },
+    {
+      "name": "Subway",
+      "location": "Nationwide",
+      "cuisineType": "Sandwich",
+      "image": "https://fastly.4sqi.net/img/general/600x600/493832513_rSgFRYR4mQKJdmAWXbyQQe3fmQIXCtQnRDySYASUdm8.jpg",
+      "rating": "6",
+      "review": "",
+      "id": 8
+    },
+    {
+      "name": "Subway",
+      "location": "Nationwide",
+      "cuisineType": "Subs",
+      "image": "hgfhgfh",
+      "rating": "6",
+      "review": "it's okay",
+      "id": 9
     }
   ]
 }

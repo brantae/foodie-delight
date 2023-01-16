@@ -12,7 +12,7 @@ function RestaurantForm({ onAddRestaurant }) {
     review: ''
   })
   
-    //need a function to handle form changes
+    
     function handleChange(event) {
       
       setFormData({
@@ -20,11 +20,12 @@ function RestaurantForm({ onAddRestaurant }) {
       })
     }
   
-    //need a function to handle form submit
+    
     function handleSubmit(event) {
       event.preventDefault() //not really needed bc semantic covers it
   
       //build new restaurant obj from form data
+      //check redundancy 
       const newRestaurant = {
         name: formData.name,
         location: formData.location,
@@ -101,6 +102,9 @@ return (
               width={10}
               required
               label="review"
+              name="review"
+              value={formData.review}
+              onChange={handleChange} 
               placeholder="add your review" 
             />
              <Form.Button>submit</Form.Button>

@@ -11,7 +11,7 @@ function RestaurantHome({ restaurants, setRestaurants }) {
 const [search, setSearch] = useState("")
 
 
-  //filter restaurant for our search feature
+  
   const restaurantsToDisplay = restaurants.filter(restaurant => {
     return restaurant.name.toLowerCase().includes(search.toLowerCase())
   })
