@@ -34,7 +34,7 @@ function RestaurantForm({ onAddRestaurant }) {
         review: formData.review
       }
   
-      //post request to send data to server
+      
       fetch("http://localhost:3003/restaurants", {
         method: "POST",
         headers: {
