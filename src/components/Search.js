@@ -2,8 +2,7 @@ import React from "react";
 import { Input } from "semantic-ui-react";
 
 function Search({ search, onChangeSearch }) {
-//function to handle the onchange in input
-//set the state and pass it back up to parent component
+
   function handleChange(event) {
     onChangeSearch(event.target.value)
   }

@@ -16,7 +16,7 @@ const [search, setSearch] = useState("")
     return restaurant.name.toLowerCase().includes(search.toLowerCase())
   })
 
-  //add new restaurant to the data
+  
     function handleAddRestaurant(newRestaurant) {
       setRestaurants([newRestaurant, ...restaurants])
     }

@@ -22,10 +22,9 @@ function RestaurantForm({ onAddRestaurant }) {
   
     
     function handleSubmit(event) {
-      event.preventDefault() //not really needed bc semantic covers it
+      event.preventDefault() 
   
-      //build new restaurant obj from form data
-      //check redundancy 
+    
       const newRestaurant = {
         name: formData.name,
         location: formData.location,
