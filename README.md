@@ -1,5 +1,4 @@
 # "Foodie Delight"
-...except they are United States-based as I have yet to explore other countries. Perfect for foodies!
 
 ## Overview
 
